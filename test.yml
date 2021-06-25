@@ -1,6 +1,5 @@
 ---
  - hosts: localhost
-   connection: local
    tasks:
      - name: testing
-       debug: "{{ testvar }}"
+       debug: msg="Hello wordl"
