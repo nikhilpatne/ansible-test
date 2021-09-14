@@ -1,0 +1,1 @@
+curl  --cacert /etc/rhsm/ca/redhat-uep.pem --cert /etc/pki/entitlement/6942175184021388482.pem --key /etc/pki/entitlement/6942175184021388482-key.pem  https://cdn.redhat.com/content/dist/rhel8/8/x86_64/baseos/iso/rhel-8.2-x86_64-dvd.iso -o rhel-8.2-x86_64-dvd.iso
