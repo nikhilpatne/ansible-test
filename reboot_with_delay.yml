@@ -1,0 +1,4 @@
+- name: Reboot host with 2 min delay
+  win_reboot:
+    reboot_timeout: 3000
+    post_reboot_delay: 120
