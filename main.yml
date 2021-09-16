@@ -1,0 +1,20 @@
+---
+# tasks file for windows_patching
+
+
+
+- import_tasks: reboot_with_delay.yml
+- import_tasks: patch_and_reboot.yml
+
+- import_tasks: patch_and_reboot.yml
+  when: update_result is failed or not update_result
+
+
+- import_tasks: patch_and_reboot.yml
+  when: update_result is failed or not update_result
+
+- import_tasks: patch_and_reboot.yml
+  when: update_result is failed or not update_result
+
+- import_tasks: patch_and_reboot.yml
+  when: update_result is failed or not update_result
