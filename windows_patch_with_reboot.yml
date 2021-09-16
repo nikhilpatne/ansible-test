@@ -1,0 +1,9 @@
+- name: Install all security updates and reboot
+  win_updates:
+     category_names:
+       - SecurityUpdates
+     state: installed
+     reboot: yes
+     reboot_timeout: 3000
+  register: update_result
+  ignore_errors: yes
