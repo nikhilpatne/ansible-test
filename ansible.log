@@ -1,0 +1,219 @@
+
+PLAY [localhost] ***************************************************************
+
+TASK [include_role : rhel-iso-management] **************************************
+Tuesday 28 September 2021  23:35:17 +0530 (0:00:00.053)       0:00:00.053 ***** 
+
+TASK [rhel-iso-management : To get Redhat Access token] ************************
+Tuesday 28 September 2021  23:35:17 +0530 (0:00:00.067)       0:00:00.120 ***** 
+changed: [localhost]
+
+TASK [rhel-iso-management : Print Access token token] **************************
+Tuesday 28 September 2021  23:35:19 +0530 (0:00:01.306)       0:00:01.427 ***** 
+ok: [localhost] => {
+    "msg": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICItNGVsY19WZE5fV3NPVVlmMkc0UXhyOEdjd0l4X0t0WFVDaXRhdExLbEx3In0.eyJleHAiOjE2MzI4NTMyMTksImlhdCI6MTYzMjg1MjMxOSwiYXV0aF90aW1lIjoxNjMwOTAyODg4LCJqdGkiOiIzNTg3NjlkOS0zOGIzLTRhYjMtODE0Yy1iYzE4NDQzNGNjOWMiLCJpc3MiOiJodHRwczovL3Nzby5yZWRoYXQuY29tL2F1dGgvcmVhbG1zL3JlZGhhdC1leHRlcm5hbCIsImF1ZCI6InJoc20tYXBpIiwic3ViIjoiZjo1MjhkNzZmZi1mNzA4LTQzZWQtOGNkNS1mZTE2ZjRmZTBjZTY6bmlja3BhdG5lIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoicmhzbS1hcGkiLCJzZXNzaW9uX3N0YXRlIjoiYjY1YzZlMDEtYWM4Zi00YjYzLThhZTQtYTZlMmJjMmUxN2E1IiwiYWNyIjoiMCIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJwb3J0YWxfbWFuYWdlX3N1YnNjcmlwdGlvbnMiLCJvZmZsaW5lX2FjY2VzcyIsImFkbWluOm9yZzphbGwiLCJwb3J0YWxfbWFuYWdlX2Nhc2VzIiwicG9ydGFsX3N5c3RlbV9tYW5hZ2VtZW50IiwicG9ydGFsX2Rvd25sb2FkIl19LCJzY29wZSI6Im9mZmxpbmVfYWNjZXNzIiwiYWNjb3VudF9udW1iZXIiOiI2ODE1MjI1IiwiYWNjb3VudF9pZCI6IjEzMjIxNjc4IiwidXNlcl9pZCI6IjUzMzU0NDU3IiwibmFtZSI6Ik5pa2hpbCBQYXRuZSIsInByZWZlcnJlZF91c2VybmFtZSI6Im5pY2twYXRuZSIsImxvY2FsZSI6ImVuX1VTIiwiZ2l2ZW5fbmFtZSI6Ik5pa2hpbCIsImZhbWlseV9uYW1lIjoiUGF0bmUiLCJlbWFpbCI6Im5pa2hpbC5wYXRuZUBnc2xhYi5jb20ifQ.MgWUxLcZjQtvhwcu6eTK5FmGsAJ5qgo4X1ZaTvSNG8O-t2fxkcYeaJXCLIjuExVn_-Jvnbm_GsSS6-IcbnGhZJftdVGIvCVTGZMoGQQx_Qvf9pjBRuEK2lr0ZNB5b6ipLUMfThCAEcWZWQMRhZfL0SRjG9iGtwDY3ErR-343mD9hm51tbrTuV-UnOkbpaxr6taqLOuWTtI3JxRSgFwkk8PajdKCscir5hgT5HaKFeOy7f9EdHRfftbmt3qh1vZV4QaT2HYecoHh3KwIcSq53xiV2SGJcZHMDD8QOgwDIJptb7Dln1wo_SXCweYEpno-gJmbIBWr6ZG7vfZxxmvHGBS7i2vpPdSmvVGwQ86jDLoZXVSrL5ny-MPeNZ5CxJni-SihvV14BYM3WoDUvyM_QHGwYa4IlJkUt0abJAdvlbIUo1MU9ZvZWhZSRtMANr-AXh9CPEF_CX-1mHxhF9wD8L8po6ZE8MoncGtSlZH6Pyelzz8baU94sOCCMQ_Is__71wqA8iAIXaqexf_NeoQbh1fU0X9pOyd0N0a6Li0P81dI3WhZOgBUs0d1Nh5s07H9U4UjMd14Ug7s7z4Q2D3RApHO1Oxv8dWqk_IcEZNqqmU6hbnFdTQtlg8aAGefwoeW8m_BjsX2ZgzW_4BKtjPfJe83FKA0gZSQowhM2V2FjQVY"
+}
+
+TASK [rhel-iso-management : Calling API to get all resources] ******************
+Tuesday 28 September 2021  23:35:19 +0530 (0:00:00.046)       0:00:01.474 ***** 
+ok: [localhost]
+
+TASK [rhel-iso-management : filtering checksum of rhel8.1-dvd-iso] *************
+Tuesday 28 September 2021  23:35:22 +0530 (0:00:02.989)       0:00:04.463 ***** 
+skipping: [localhost] => (item={'imageName': 'Driver update disk (dd-atlantic-4.18.0_255.el8_dup8.3-1.el8_3.iso)', 'filename': 'dd-atlantic-4.18.0_255.el8_dup8.3-1.el8_3.iso', 'arch': 'x86_64', 'datePublished': '2021-04-13T15:47:59.000Z', 'checksum': 'f2e70bfdafb3b4360beac338e6ac7bc0d5c5696d1f9efc5ec9e045f262efb09a', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/f2e70bfdafb3b4360beac338e6ac7bc0d5c5696d1f9efc5ec9e045f262efb09a/download'}) 
+skipping: [localhost] => (item={'imageName': 'Driver update disk (dd-bnxt_en-1.10.0_dup8.1-2.el8_1.iso)', 'filename': 'dd-bnxt_en-1.10.0_dup8.1-2.el8_1.iso', 'arch': 'x86_64', 'datePublished': '2020-02-25T09:01:51.000Z', 'checksum': '1789019f300dffe1f44c92d937981b6ef28d6b1ad552933c1eeb941a9a6c8f50', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/1789019f300dffe1f44c92d937981b6ef28d6b1ad552933c1eeb941a9a6c8f50/download'}) 
+skipping: [localhost] => (item={'imageName': 'Driver update disk (dd-ice-0.8.2_k_dup8.2-1.el8_2.iso)', 'filename': 'dd-ice-0.8.2_k_dup8.2-1.el8_2.iso', 'arch': 'x86_64', 'datePublished': '2020-10-27T10:19:51.000Z', 'checksum': '5bfebf03862eb4383895da5e25987c18655dabea4088a5546b5b8dcfc8b449ef', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/5bfebf03862eb4383895da5e25987c18655dabea4088a5546b5b8dcfc8b449ef/download'}) 
+skipping: [localhost] => (item={'imageName': 'Driver update disk (dd-ionic-4.18.0.210_dup8.2-1.el8_2.iso)', 'filename': 'dd-ionic-4.18.0.210_dup8.2-1.el8_2.iso', 'arch': 'x86_64', 'datePublished': '2020-07-22T13:22:57.000Z', 'checksum': 'bcb1e8c9353327635b234dcf4b029eccc83d85bda29ca1b75b90323c34cfefdc', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/bcb1e8c9353327635b234dcf4b029eccc83d85bda29ca1b75b90323c34cfefdc/download'}) 
+skipping: [localhost] => (item={'imageName': 'Driver update disk (dd-iwlwifi-4.18.0_107_dup8.0-5-btusb-0.8_4.18.0_80.23_dup8.0-4.el8_0.iso)', 'filename': 'dd-iwlwifi-4.18.0_107_dup8.0-5-btusb-0.8_4.18.0_80.23_dup8.0-4.el8_0.iso', 'arch': 'x86_64', 'datePublished': '2019-10-31T08:36:32.000Z', 'checksum': '7ded31b1a751c8a7c48c9f4962c0299b5b8f647370be662dc1aa1d9ac846cd5b', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/7ded31b1a751c8a7c48c9f4962c0299b5b8f647370be662dc1aa1d9ac846cd5b/download'}) 
+skipping: [localhost] => (item={'imageName': 'Driver update disk (dd-mlx5_core-5.0_0_dup8.2-2.el8_2.iso)', 'filename': 'dd-mlx5_core-5.0_0_dup8.2-2.el8_2.iso', 'arch': 'x86_64', 'datePublished': '2020-10-27T10:17:04.000Z', 'checksum': 'ab065772ff63e5be776ed739661b994276edd56935b7a469d443807343ae137c', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/ab065772ff63e5be776ed739661b994276edd56935b7a469d443807343ae137c/download'}) 
+skipping: [localhost] => (item={'imageName': 'Driver update disk (dd-mpt3sas-35.101.00.00_dup8.3-1.el8_3.iso)', 'filename': 'dd-mpt3sas-35.101.00.00_dup8.3-1.el8_3.iso', 'arch': 'x86_64', 'datePublished': '2021-01-25T13:31:57.000Z', 'checksum': '215976eb3e5bf1f89d3e096cbabf3672d4bdd36a2647d7368b1085787074e985', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/215976eb3e5bf1f89d3e096cbabf3672d4bdd36a2647d7368b1085787074e985/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.0 Update KVM Guest Image', 'filename': 'rhel-8.0-update-0-x86_64-kvm.qcow2', 'arch': 'x86_64', 'datePublished': '2019-05-27T13:06:42.000Z', 'checksum': 'bb21783a9b1c7427019f87b39475105988d17a7cde9da582c370521678f8efb1', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/bb21783a9b1c7427019f87b39475105988d17a7cde9da582c370521678f8efb1/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.0 Update KVM Guest Image (20190618)', 'filename': 'rhel-8.0-update-1-x86_64-kvm.qcow2', 'arch': 'x86_64', 'datePublished': '2019-06-19T15:48:12.000Z', 'checksum': '5374da54169844ec36a291da7adb4b2e2254020a97b1e7eaaa92cebf8f4ac6e4', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/5374da54169844ec36a291da7adb4b2e2254020a97b1e7eaaa92cebf8f4ac6e4/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.0 Update KVM Guest Image', 'filename': 'rhel-8.0-update-3-x86_64-kvm.qcow2', 'arch': 'x86_64', 'datePublished': '2019-09-24T16:57:51.000Z', 'checksum': '25dc356a078327d32c0aa376404afd4f8e61385f5d2d2b1fe08c4976b28e3ef8', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/25dc356a078327d32c0aa376404afd4f8e61385f5d2d2b1fe08c4976b28e3ef8/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.0 Boot ISO', 'filename': 'rhel-8.0-x86_64-boot.iso', 'arch': 'x86_64', 'datePublished': '2019-04-11T15:20:12.000Z', 'checksum': 'f6be6ec48a4a610e25d591dcf98e1777c4274ed58c583fa64d0aea5b3ecffb18', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/f6be6ec48a4a610e25d591dcf98e1777c4274ed58c583fa64d0aea5b3ecffb18/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.0 Binary DVD', 'filename': 'rhel-8.0-x86_64-dvd.iso', 'arch': 'x86_64', 'datePublished': '2019-04-11T15:50:08.000Z', 'checksum': '005d4f88fff6d63b0fc01a10822380ef52570edd8834321de7be63002cc6cc43', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/005d4f88fff6d63b0fc01a10822380ef52570edd8834321de7be63002cc6cc43/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.0 KVM Guest Image', 'filename': 'rhel-8.0-x86_64-kvm.qcow2', 'arch': 'x86_64', 'datePublished': '2019-04-11T15:16:32.000Z', 'checksum': '68312d7c9f6316921086dc891285fdba41a0f0febee35cc28161d65e6170857f', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/68312d7c9f6316921086dc891285fdba41a0f0febee35cc28161d65e6170857f/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.1 Update Boot ISO', 'filename': 'rhel-8.1-update-3-x86_64-boot.iso', 'arch': 'x86_64', 'datePublished': '2020-04-07T14:23:35.000Z', 'checksum': '5b442d7b589aaf2c57cd113df14028479a9bb6bced338a723babd840989f6c7d', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/5b442d7b589aaf2c57cd113df14028479a9bb6bced338a723babd840989f6c7d/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.1 Update KVM Guest Image', 'filename': 'rhel-8.1-update-3-x86_64-kvm.qcow2', 'arch': 'x86_64', 'datePublished': '2020-04-07T14:24:19.000Z', 'checksum': '1e25c46cc4644a2b913f4d5bea3a0a91180f539fb41bcf22ee0ca8a6cd4b8363', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/1e25c46cc4644a2b913f4d5bea3a0a91180f539fb41bcf22ee0ca8a6cd4b8363/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.1 Boot ISO', 'filename': 'rhel-8.1-x86_64-boot.iso', 'arch': 'x86_64', 'datePublished': '2019-10-21T16:44:26.000Z', 'checksum': '643e706cf7db9e93e706637af92d80eb58377dd0c64ac1e9ce6a72700aa04c2a', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/643e706cf7db9e93e706637af92d80eb58377dd0c64ac1e9ce6a72700aa04c2a/download'}) 
+ok: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.1 Binary DVD', 'filename': 'rhel-8.1-x86_64-dvd.iso', 'arch': 'x86_64', 'datePublished': '2019-10-21T17:03:24.000Z', 'checksum': '2323ad44d75df1a1e83048a34e196ddfedcd6c0f6c49ea59bf08095e3bb9ef65', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/2323ad44d75df1a1e83048a34e196ddfedcd6c0f6c49ea59bf08095e3bb9ef65/download'})
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.1 KVM Guest Image', 'filename': 'rhel-8.1-x86_64-kvm.qcow2', 'arch': 'x86_64', 'datePublished': '2019-11-07T16:08:25.000Z', 'checksum': '30d8c48b34cb471298e1f06fd1ef954561d29cdff27e62bbc2dc32785587b7e2', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/30d8c48b34cb471298e1f06fd1ef954561d29cdff27e62bbc2dc32785587b7e2/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.2 Update KVM Guest Image', 'filename': 'rhel-8.2-update-2-x86_64-kvm.qcow2', 'arch': 'x86_64', 'datePublished': '2020-08-04T15:01:10.000Z', 'checksum': '588167f828001e57688ec4b9b31c11a59d532489f527488ebc89ac5e9522f333', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/588167f828001e57688ec4b9b31c11a59d532489f527488ebc89ac5e9522f333/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.2 Boot ISO', 'filename': 'rhel-8.2-x86_64-boot.iso', 'arch': 'x86_64', 'datePublished': '2020-04-08T14:34:08.000Z', 'checksum': 'd30989c6b3f3b81c262dfbf6e8f711e0d49a6828eb77833c34859e694c24e981', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/d30989c6b3f3b81c262dfbf6e8f711e0d49a6828eb77833c34859e694c24e981/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.2 Binary DVD', 'filename': 'rhel-8.2-x86_64-dvd.iso', 'arch': 'x86_64', 'datePublished': '2020-04-08T14:56:56.000Z', 'checksum': '7fdfed9c7cced4e526a362e64ed06bcdc6ce0394a98625a40e7d05db29bf7b86', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/7fdfed9c7cced4e526a362e64ed06bcdc6ce0394a98625a40e7d05db29bf7b86/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.2 Update KVM Guest Image', 'filename': 'rhel-8.2-x86_64-kvm.qcow2', 'arch': 'x86_64', 'datePublished': '2020-04-28T05:42:56.000Z', 'checksum': '8e34e57feb68d19ba9ffbefcd3f662b1a3437c9f7d811449c5ad452adda64384', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/8e34e57feb68d19ba9ffbefcd3f662b1a3437c9f7d811449c5ad452adda64384/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.3 Update KVM Guest Image', 'filename': 'rhel-8.3-update-2-x86_64-kvm.qcow2', 'arch': 'x86_64', 'datePublished': '2021-02-16T15:57:21.000Z', 'checksum': '055d6fa91f0ad42556325b8ea1ff1950876bef18e164dc964f7cd4431fa294d8', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/055d6fa91f0ad42556325b8ea1ff1950876bef18e164dc964f7cd4431fa294d8/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.3 Boot ISO', 'filename': 'rhel-8.3-x86_64-boot.iso', 'arch': 'x86_64', 'datePublished': '2020-10-14T08:21:40.000Z', 'checksum': '1b73ebfebd1f9424c806032168873b067259d8b29f4e9d39ae0e4009cce49b93', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/1b73ebfebd1f9424c806032168873b067259d8b29f4e9d39ae0e4009cce49b93/download'}) 
+skipping: [localhost] => (item={'imageName': 'Red Hat Enterprise Linux 8.3 Binary DVD', 'filename': 'rhel-8.3-x86_64-dvd.iso', 'arch': 'x86_64', 'datePublished': '2020-10-14T10:05:34.000Z', 'checksum': '30fd8dff2d29a384bd97886fa826fa5be872213c81e853eae3f9d9674f720ad0', 'downloadHref': 'https://api.access.redhat.com/management/v1/images/30fd8dff2d29a384bd97886fa826fa5be872213c81e853eae3f9d9674f720ad0/download'}) 
+
+TASK [rhel-iso-management : checksum value of rhel8.1-dvd-iso] *****************
+Tuesday 28 September 2021  23:35:22 +0530 (0:00:00.222)       0:00:04.686 ***** 
+ok: [localhost] => {
+    "msg": "2323ad44d75df1a1e83048a34e196ddfedcd6c0f6c49ea59bf08095e3bb9ef65"
+}
+
+TASK [rhel-iso-management : downloading RHEL-8.1-DVD iso file] *****************
+Tuesday 28 September 2021  23:35:22 +0530 (0:00:00.054)       0:00:04.740 ***** 
+changed: [localhost]
+
+TASK [rhel-iso-management : Checking on async task - downloading RHEL-8.1-DVD iso file] ***
+Tuesday 28 September 2021  23:35:22 +0530 (0:00:00.557)       0:00:05.297 ***** 
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (200 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (199 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (198 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (197 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (196 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (195 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (194 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (193 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (192 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (191 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (190 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (189 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (188 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (187 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (186 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (185 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (184 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (183 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (182 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (181 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (180 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (179 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (178 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (177 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (176 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (175 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (174 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (173 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (172 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (171 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (170 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (169 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (168 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (167 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (166 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (165 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (164 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (163 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (162 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (161 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (160 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (159 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (158 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (157 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (156 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (155 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (154 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (153 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (152 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (151 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (150 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (149 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (148 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (147 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (146 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (145 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (144 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (143 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (142 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (141 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (140 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (139 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (138 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (137 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (136 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (135 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (134 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (133 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (132 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (131 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (130 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (129 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (128 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (127 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (126 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (125 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (124 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (123 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (122 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (121 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (120 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (119 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (118 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (117 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (116 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (115 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (114 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (113 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (112 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (111 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (110 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (109 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (108 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (107 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (106 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (105 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (104 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (103 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (102 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (101 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (100 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (99 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (98 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (97 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (96 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (95 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (94 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (93 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (92 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (91 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (90 retries left).
+FAILED - RETRYING: Checking on async task - downloading RHEL-8.1-DVD iso file (89 retries left).
+ok: [localhost]
+
+TASK [rhel-iso-management : To get checksum of downloaded file] ****************
+Wednesday 29 September 2021  00:13:10 +0530 (0:37:47.219)       0:37:52.517 *** 
+changed: [localhost]
+
+TASK [rhel-iso-management : calculated checksum] *******************************
+Wednesday 29 September 2021  00:13:32 +0530 (0:00:22.106)       0:38:14.623 *** 
+ok: [localhost] => {
+    "msg": "2323ad44d75df1a1e83048a34e196ddfedcd6c0f6c49ea59bf08095e3bb9ef65"
+}
+
+TASK [rhel-iso-management : Failing the execution due to mismatching checksum value] ***
+Wednesday 29 September 2021  00:13:32 +0530 (0:00:00.060)       0:38:14.684 *** 
+skipping: [localhost]
+
+TASK [rhel-iso-management : To check file rhel-8.1-x86_64-dvd.iso exists or not at /tmp/] ***
+Wednesday 29 September 2021  00:13:32 +0530 (0:00:00.070)       0:38:14.755 *** 
+ok: [localhost]
+
+TASK [rhel-iso-management : uploading file to vSphere] *************************
+Wednesday 29 September 2021  00:13:44 +0530 (0:00:11.733)       0:38:26.488 *** 
+changed: [localhost]
+
+TASK [rhel-iso-management : Delete downloaded ISO file rhel-8.1-x86_64-dvd.iso] ***
+Wednesday 29 September 2021  00:21:51 +0530 (0:08:06.996)       0:46:33.485 *** 
+changed: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=12   changed=5    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+Wednesday 29 September 2021  00:21:52 +0530 (0:00:01.563)       0:46:35.049 *** 
+=============================================================================== 
+rhel-iso-management : Checking on async task - downloading RHEL-8.1-DVD iso file  2267.22s
+rhel-iso-management : uploading file to vSphere ----------------------- 487.00s
+rhel-iso-management : To get checksum of downloaded file --------------- 22.11s
+rhel-iso-management : To check file rhel-8.1-x86_64-dvd.iso exists or not at /tmp/ -- 11.73s
+rhel-iso-management : Calling API to get all resources ------------------ 2.99s
+rhel-iso-management : Delete downloaded ISO file rhel-8.1-x86_64-dvd.iso --- 1.56s
+rhel-iso-management : To get Redhat Access token ------------------------ 1.31s
+rhel-iso-management : downloading RHEL-8.1-DVD iso file ----------------- 0.56s
+rhel-iso-management : filtering checksum of rhel8.1-dvd-iso ------------- 0.22s
+rhel-iso-management : Failing the execution due to mismatching checksum value --- 0.07s
+include_role : rhel-iso-management -------------------------------------- 0.07s
+rhel-iso-management : calculated checksum ------------------------------- 0.06s
+rhel-iso-management : checksum value of rhel8.1-dvd-iso ----------------- 0.05s
+rhel-iso-management : Print Access token token -------------------------- 0.05s
