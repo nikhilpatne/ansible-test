@@ -6,9 +6,9 @@
       mail:
         host: "smtp.gmail.com"
         port: "587"
-        username: "idmsubs@gslab.com"
-        password: "eefncgnfzgvxjsvi"
-        to: "User <nikhil.patne@gslab.com>"
+        username: ""
+        password: ""
+        to: "User <nikhil@gmail.com>"
         subject: "test"
         subtype: html
         body: "hello nikhil"
